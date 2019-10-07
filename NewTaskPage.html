@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Project Manager</title>
+    <!--tab icon-->
+    <link rel="icon" type="image/png" href="media/logo.png"/>
+    <!--fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800&display=swap" rel="stylesheet">
+    <!--styles-->
+    <link rel="stylesheet" type="text/css" href="Style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <body>
+    <section id="new-task">
+      <header>
+        <a href="ProjectPage.html">
+          <img src ="media/return.png" alt="return">
+        </a>
+        <h1>New Task</h1>
+      </header>
+      <h6>Add a new task to this project</h6>
+      <div class="form-box">
+        <form>
+            <div class="attributes">
+              <h4>Task's description</h4>
+              <h4>Task's responsable</h4>
+            </div>
+            <div class="values">
+              <input id="new-task-description" type="text" placeholder="Write here">
+              <input id="new-task-responsable" type="text" placeholder="Write here">
+            </div>
+          </form>
+      </div>
+      <a id="new-task-bt">
+        <span>Add Task</span>
+      </a>
+    </section>
+    <!--scripts-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="Actions.js"></script>
+  </body>
+</html>

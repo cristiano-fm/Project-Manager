@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Project Manager</title>
+    <!--tab icon-->
+    <link rel="icon" type="image/png" href="media/logo.png"/>
+    <!--fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800&display=swap" rel="stylesheet">
+    <!--styles-->
+    <link rel="stylesheet" type="text/css" href="Style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <body>
+    <section id="edit-task">
+      <header>
+        <a href="ProjectPage.html">
+          <img src ="media/return.png" alt="return">
+        </a>
+        <h1>Edit Task</h1>
+      </header>
+      <h6>Edit this task's attributes</h6>
+      <div class="form-box">
+        <form>
+            <div class="attributes">
+              <h4>Description</h4>
+              <h4>Responsable</h4>
+              <h4>State</h4>
+              <br>
+              <h4>Start day</h4>
+              <h4>Start time</h4>
+              <br>
+              <h4>End day</h4>
+              <h4>End time</h4>
+              <br>
+              <h4>Duration (min)</h4>
+            </div>
+            <div class="values">
+              <input type="text" name="description" placeholder="Write here">
+              <input type="text" name="responsable" placeholder="Write here">
+              <select name="state">
+                  <option value="Planned" selected>Planned</option>
+                  <option value="Started">Started</option>
+                  <option value="Finished">Finished</option>
+                </select>
+              <br>
+              <input type="date" name="start-day">
+              <input type="time" name="start-time">
+              <br>
+              <input type="date" name="end-day">
+              <input type="time" name="end-time">
+              <br>
+              <input type="number" name="duration" placeholder="Write here">
+            </div>
+          </form>
+      </div>
+      <a id="save-task-bt">
+        <span>Save Changes</span>
+      </a>
+      <a id="delete-task-bt">
+          <span class="red-bt">Delete Task</span>
+      </a>
+    </section>
+    <!--scripts-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="EditTask.js"></script>
+  </body>
+</html>

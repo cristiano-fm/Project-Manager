@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Project Manager</title>
+    <!--tab icon-->
+    <link rel="icon" type="image/png" href="media/logo.png"/>
+    <!--fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200i,300,400,500,600,700,800&display=swap" rel="stylesheet">
+    <!--styles-->
+    <link rel="stylesheet" type="text/css" href="Style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <body>
+    <section id="project">
+      <header>
+        <a href="Index.html">
+          <img src ="media/return.png" alt="return">
+        </a>
+        <h1 id="project-title"></h1>
+        <a href="EditProjectPage.html">
+          <img src ="media/edit.png" alt="return">
+        </a>
+      </header>
+      <h6 id="project-description"></h6>
+      <table id="project-tasks">
+        <tr>
+          <th>Task</th>
+          <th>Responsible</th>
+          <th>State</th>
+          <th>Start</th>
+          <th>End</th>
+          <th>Duration</th>
+        </tr>
+      </table>
+      <a href="NewTaskPage.html">
+        <span>Add Task</span>
+      </a>
+    </section>
+    <!--scripts-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="Project.js"></script>
+  </body>
+</html>

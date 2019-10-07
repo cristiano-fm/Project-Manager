@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Project Manager</title>
+    <!--tab icon-->
+    <link rel="icon" type="image/png" href="media/logo.png"/>
+    <!--fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800&display=swap" rel="stylesheet">
+    <!--styles-->
+    <link rel="stylesheet" type="text/css" href="Style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <body>
+    <section id="edit-project">
+      <header>
+        <a href="ProjectPage.html">
+          <img src ="media/return.png" alt="return">
+        </a>
+        <h1>Edit Project</h1>
+      </header>
+      <h6>Edit this project's attributes</h6>
+      <div class="form-box">
+        <form>
+            <div class="attributes">
+              <h4>Project name</h4>
+              <h4>Project description</h4>
+            </div>
+            <div class="values">
+              <input type="text" name="name" placeholder="Write here">
+              <input type="text" name="description" placeholder="Write here">
+            </div>
+          </form>
+      </div>
+      <a id="save-proj-bt">
+        <span>Save Changes</span>
+      </a>
+      <a id="delete-proj-bt">
+        <span class="red-bt">Delete Project</span>
+      </a>
+    </section>
+    <!--scripts-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="EditProject.js"></script>
+  </body>
+</html>
